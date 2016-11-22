@@ -1,0 +1,15 @@
+<!-- <h1>Articles#index</h1>
+<p>Find me in app/views/articles/index.html.erb</p>
+ -->
+
+ <div class="all-articles">
+   <h1 class="art-h1">articles of beer</h1>
+
+      <% @articles.each do |article|%>
+      <div class="ind-art-div">
+         <h2 class="act-title"><%= article.title%></h2>
+         <p><%= article.content%></p>
+       </div>
+      <%end%>
+
+ </div>

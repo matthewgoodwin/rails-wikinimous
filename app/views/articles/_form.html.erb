@@ -1,0 +1,11 @@
+<!-- created for the 'new' and 'edit' methods-->
+<!-- @task sets the :name and :describe for the params[:task], these are passed as a hash to the Task.new(..)-->
+<div class="ind-art-div">
+<%= form_for(@article) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+  <%= f.submit %>
+<% end %>
+</div>
